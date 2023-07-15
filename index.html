@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Historical Weather</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Historical Weather - Budapest</h1>
+    <aside>
+      <a href="https://open-meteo.com/en/docs/historical-weather-api" target="_blank"><img src="images/1d.png"
+          alt="weather" /></a>
+          <p>
+        <a href="https://open-meteo.com/en/docs/historical-weather-api" target="_blank">Open-Meteo API</a>
+      </p>
+    </aside>
+    <form action="javascript:void(0);">
+      <label for="start-date">Kezdő dátum:</label>
+      <input type="date" id="start-date" name="start-date" />
+      <label for="end-date">Záró dátum:</label>
+      <input type="date" id="end-date" name="end-date" />
+      <input type="submit" id="submit" value="Küldés" />
+    </form>
+    <div id="data"></div>
+  </div>
+</body>
+
+</html>
